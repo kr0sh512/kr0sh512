@@ -48,8 +48,8 @@ I'm a passionate developer and Computer Science student at [CMC MSU](https://cmc
 
 ## 🌐 Connect with Me
 
-[![Telegram](https://img.shields.io/badge/Telegram-Contact-blue?style=flat&logo=telegram)](https://t.me/kr0sh_512)
-[![Email](https://img.shields.io/badge/Email-yourname@example.com-blue?style=flat&logo=gmail)](mailto:gudovdo@my.msu.ru)
+[![Telegram](https://img.shields.io/badge/Telegram-Kr0sH_512-blue?style=flat&logo=telegram)](https://t.me/kr0sh_512)
+[![Email](https://img.shields.io/badge/Email-gudovdo@my.msu.ru-blue?style=flat&logo=gmail)](mailto:gudovdo@my.msu.ru)
 
 ---
 
