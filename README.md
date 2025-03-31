@@ -37,7 +37,7 @@ I'm a passionate developer and Computer Science student at [CMC MSU](https://cmc
 **Description**: A web timer with cookie support to retain settings across sessions.
 
 ---
-
+<!--
 ## 📈 GitHub Stats
 
 ![kr0sh512's GitHub stats](https://github-readme-stats.vercel.app/api?username=kr0sh512&show_icons=true&theme=radical)
@@ -45,7 +45,7 @@ I'm a passionate developer and Computer Science student at [CMC MSU](https://cmc
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kr0sh512&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
-
+-->
 ## 🌐 Connect with Me
 
 [![Telegram](https://img.shields.io/badge/Telegram-Kr0sH_512-blue?style=flat&logo=telegram)](https://t.me/kr0sh_512)
