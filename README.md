@@ -15,14 +15,20 @@ I'm a passionate developer and Computer Science student at [CMC MSU](https://cmc
 
 ## 🔧 Skills
 
-- **Languages**: Python, C++, JavaScript
-- **Frameworks/Tools**: Git, Linux
-- **Database Management**: MySQL
+- **Languages**: Python, C++
+- **Frameworks/Tools**: Git, Linux, Docker
+- **Database Management**: MySQL, MongoDB
 - **Other**: Web Automation, Telegram Bot Development, Problem Solving
 
 ---
 
 ## 🖥️ Projects
+
+### [Syncing Spotify with Telegram Bio](https://github.com/kr0sh512/spotify-to-tg-bio)
+**Description**: A script that syncs the playing track from spotify in the background with the Bio column in the user's telegram.
+
+### [Random Coffe Bot](https://github.com/kr0sh512/rc-tgbot)
+**Description**: This Telegram bot was created for the cmc msu student union for a speed dating event.
 
 ### [Telegram Bot Schedule](https://github.com/kr0sh512/Telegram-bot-schedule)
 **Description**: A Telegram bot that sends reminders about events a set time before they start.
