@@ -17,7 +17,7 @@ I'm a passionate developer and Computer Science student at [CMC MSU](https://cmc
 
 - **Languages**: Python, C++
 - **Frameworks/Tools**: Git, Linux, Docker
-- **Database Management**: MySQL, MongoDB
+- **Database Management**: Postgres, MongoDB
 - **Other**: Web Automation, Telegram Bot Development, Problem Solving
 
 ---
