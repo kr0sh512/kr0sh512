@@ -13,6 +13,12 @@ I'm a passionate developer and Computer Science student at [CMC MSU](https://cmc
 
 ---
 
+## 💼 Experience
+
+- **Yandex Intern**, **DevTools Team, Autonomous Transport** — *Fall 2025*
+
+---
+
 ## 🔧 Skills
 
 - **Languages**: Python, C++
