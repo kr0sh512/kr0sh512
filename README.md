@@ -1,54 +1,68 @@
 # Hi there! 👋 I'm Dmitrii Gudov (kr0sh512)
 
-I'm a passionate developer and Computer Science student at [CMC MSU](https://cmc.msu.ru/). I enjoy creating projects that make everyday tasks simpler and learning new technologies to expand my skill set. Welcome to my GitHub, where you can explore my latest coding endeavors!
+I'm a DevOps-oriented developer and Computer Science student at [CMC MSU](https://cmc.msu.ru/). I build and operate Linux infrastructure, automate repeatable work, develop system and backend tools. My current focus is ALT Linux and RPM internals, Kubernetes, containers, CI/CD, and Python/C systems tooling.
 
 ---
 
 ## 🚀 About Me
 
-- 🎓 **Student at CMC MSU**
-- 💻 Interested in **System Programming and Bot Development**
-- 🌱 Currently exploring **Python, C++ and Shell Scripting**
+- 🎓 **Computer Science student at CMC MSU**
+- 🐧 Interested in **DevOps, Linux infrastructure, system programming, and networking**
+- 🛠️ Operating and troubleshooting multi-node infrastructure with **K3s/RKE2, Docker/OCI, Ansible, TLS automation and more**
+- 🔬 Researching and optimizing **ALT Linux RPM `set:version` dependency processing**
 - 📫 Reach me at **gudovdo@my.msu.ru**
 
 ---
 
 ## 💼 Experience
 
-- **Yandex Intern**, **DevTools Team, Autonomous Transport** — *Fall 2025*
+- **BaseALT** — Linux/RPM tooling and systems research — _Current_
+- **Yandex Intern**, **DevTools Team, Autonomous Transport** — _Fall 2025_
 
 ---
 
 ## 🔧 Skills
 
-- **Languages**: Python, C++
-- **Frameworks/Tools**: Git, Linux, Docker
-- **Database Management**: Postgres, MongoDB
-- **Other**: Web Automation, Telegram Bot Development, Problem Solving
+- **Languages**: Python, C, C++, Shell, SQL
+- **Infrastructure & DevOps**: Linux, Docker/OCI, Kubernetes, K3s, RKE2, Helm, Ansible, Traefik, systemd, SSH
+- **CI/CD**: GitHub Actions, GHCR, multi-architecture container builds, automated testing and packaging
+- **Backend & Data**: FastAPI, SQLAlchemy, Pydantic, PostgreSQL, SQLite, MongoDB
+- **Engineering Practices**: pytest, mypy, Black, sanitizers, differential testing, benchmarking, and reproducible build workflows
 
 ---
 
 ## 🖥️ Projects
 
+### [ALT RPM Set Version Research](https://github.com/kr0sh512/alt-rpm-set-version)
+
+Research into ALT Linux RPM's encoded symbol sets and dependency comparison. The project covers C implementation work, hashing, compatibility testing, sanitizer checks, and benchmarks against realistic RPM/APT workflows.
+
+### [nexus-sync](https://github.com/kr0sh512/nexus-sync)
+
+A client-server system for centrally managing computers and dispatching approved commands. Built with FastAPI and SQLAlchemy, with a CLI, YAML-configured clients, systemd units, standalone builds, tests, type checks, and CI packaging.
+
+### Personal Infrastructure Automation
+
+Ansible playbooks for automating Linux servers and repeatable administration. My broader infrastructure work includes multi-node K3s clusters, container deployment, ingress and ServiceLB networking, TLS lifecycle automation, and remote troubleshooting.
+
+### [Pomodoro](https://github.com/kr0sh512/pomodoro)
+
+A customizable browser-based Pomodoro timer and clock built with React, TypeScript, and Vite. GitHub Actions tests and packages it as an unprivileged multi-architecture container published to GHCR.
+
+### [Network Diagrams Tool](https://github.com/kr0sh512/network-diagrams-tool)
+
+A Python tool for building and visualizing network topologies, developed for networking and infrastructure coursework at CMC MSU.
+
+### [Marzban Telegram VPN Bot](https://github.com/kr0sh512/profhome-vpn-bot)
+
+A containerized Python Telegram bot that integrates with the Marzban API, manages one-time invitations and user lifecycle, and persists local state in SQLite.
+
 ### [Syncing Spotify with Telegram Bio](https://github.com/kr0sh512/spotify-to-tg-bio)
-**Description**: A script that syncs the playing track from spotify in the background with the Bio column in the user's telegram.
 
-### [Random Coffe Bot](https://github.com/kr0sh512/rc-tgbot)
-**Description**: This Telegram bot was created for the cmc msu student union for a speed dating event.
-
-### [Telegram Bot Schedule](https://github.com/kr0sh512/Telegram-bot-schedule)
-**Description**: A Telegram bot that sends reminders about events a set time before they start.
-
-### [Calendar of Life](https://github.com/kr0sh512/calendar-of-life)
-**Description**: A PHP-based reminder tool to encourage users to make the most of their time.
-
-### [Sudoku Solver](https://github.com/kr0sh512/sudoku-solver)
-**Description**: A command-line tool to solve Sudoku puzzles using C++.
-
-### [SimpleCountdownTimer](https://github.com/kr0sh512/SimpleCountdownTimer)
-**Description**: A web timer with cookie support to retain settings across sessions.
+A script that syncs the playing track from spotify in the background with the Bio column in the user's telegram.
 
 ---
+
 <!--
 ## 📈 GitHub Stats
 
@@ -58,6 +72,7 @@ I'm a passionate developer and Computer Science student at [CMC MSU](https://cmc
 
 ---
 -->
+
 ## 🌐 Connect with Me
 
 [![Telegram](https://img.shields.io/badge/Telegram-Kr0sH_512-blue?style=flat&logo=telegram)](https://t.me/kr0sh_512)
@@ -65,20 +80,4 @@ I'm a passionate developer and Computer Science student at [CMC MSU](https://cmc
 
 ---
 
-Thanks for visiting my profile! Feel free to reach out for collaboration or to discuss technology.
-
-
-<!--
-**kr0sh512/kr0sh512** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Thanks for visiting my profile! Feel free to reach out for collaboration, Linux infrastructure, systems programming, or DevOps projects.
