@@ -1,0 +1,94 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=1.35cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.04}
+\setlist[itemize]{
+  leftmargin=1.35em,
+  itemsep=2pt,
+  topsep=4pt,
+  partopsep=0pt,
+  parsep=0pt
+}
+
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{muted}{HTML}{555555}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  pdfauthor={Dmitrii Gudov},
+  pdftitle={Resume — Dmitrii Gudov}
+}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0pt}{}
+  [\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+\newcommand{\entry}[3]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textcolor{muted}{#2}
+  \end{tabularx}\par
+  \vspace{1pt}
+  #3\par\vspace{3pt}
+}
+\newcommand{\project}[2]{\textbf{#1} — #2\par\vspace{3pt}}
+
+\begin{document}
+\raggedright
+
+\begin{minipage}{\textwidth}
+{\LARGE\bfseries Dmitrii Gudov}\par
+\vspace{3pt}
+{\large\color{accent} DevOps / Linux Engineer · Systems and Backend Developer}\par
+\vspace{6pt}
+\href{mailto:gudovdo@my.msu.ru}{gudovdo@my.msu.ru}
+\quad·\quad
+\href{https://github.com/kr0sh512}{github.com/kr0sh512}
+\quad·\quad
+\href{https://t.me/kr0sh_512}{t.me/kr0sh\_512}
+\end{minipage}\par
+
+\section{Professional Summary}
+DevOps-oriented developer and Computer Science student at CMC MSU. I build and operate Linux infrastructure, automate repeatable work, and develop systems and backend tools. My primary interests are ALT Linux and RPM internals, Kubernetes, containers, CI/CD, Python, and C.
+
+\section{Experience}
+\entry{BaseALT}{Present}{Linux/RPM tooling and systems research, including ALT Linux dependency mechanisms, RPM performance, and compatibility.}
+
+\entry{Yandex — DevTools Intern, Autonomous Transport}{Fall 2025}{Software development in a developer tooling team.}
+
+\section{Education}
+\entry{Lomonosov Moscow State University}{Current}{Faculty of Computational Mathematics and Cybernetics, Computer Science.}
+
+\section{Core Skills}
+\begin{itemize}
+  \item \textbf{DevOps and infrastructure:} Linux, Docker/OCI, Kubernetes, K3s, RKE2, Helm, Ansible, Traefik, systemd, SSH, Let's Encrypt.
+  \item \textbf{CI/CD:} GitHub Actions, GHCR, multi-architecture container builds, automated testing, packaging, and publishing.
+  \item \textbf{Development:} Python, C, C++, TypeScript, Shell, SQL; FastAPI, SQLAlchemy, Pydantic, React, Vite.
+  \item \textbf{Data and quality:} PostgreSQL, SQLite, MongoDB; pytest, mypy, Black, sanitizers, differential testing, benchmarking.
+\end{itemize}
+
+\section{Selected Projects}
+\project{\href{https://github.com/kr0sh512/alt-rpm-set-version}{ALT RPM Set Version Research}}{research into encoded symbol sets and RPM dependency comparison, covering C implementations, hashing, compatibility, sanitizer checks, and APT/RPM benchmarks.}
+\project{\href{https://github.com/kr0sh512/nexus-sync}{nexus-sync}}{a client-server system for centralized computer management and approved command dispatch. FastAPI, SQLAlchemy, CLI, YAML configuration, systemd, standalone builds, and CI.}
+\project{Personal infrastructure}{Linux server automation with Ansible, multi-node K3s/RKE2 operations, container deployment, ingress and ServiceLB networking, TLS automation, and remote troubleshooting.}
+\project{\href{https://github.com/kr0sh512/pomodoro}{Pomodoro}}{a browser timer built with React, TypeScript, and Vite; tested and published by GitHub Actions as an unprivileged multi-architecture image in GHCR.}
+\project{\href{https://github.com/kr0sh512/network-diagrams-tool}{Network Diagrams Tool}}{a Python tool for building and visualizing network topologies.}
+\project{\href{https://github.com/kr0sh512/profhome-vpn-bot}{Marzban Telegram VPN Bot}}{a containerized Python bot for managing invitations and user lifecycle through the Marzban API.}
+
+\end{document}
