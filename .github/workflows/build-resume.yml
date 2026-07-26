@@ -1,0 +1,51 @@
+name: Build resume PDFs
+
+on:
+  push:
+    paths:
+      - "resume/**/*.tex"
+      - ".github/workflows/build-resume.yml"
+  pull_request:
+    paths:
+      - "resume/**/*.tex"
+      - ".github/workflows/build-resume.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: resume-pdfs-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Russian and English resumes
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Compile PDFs with XeLaTeX
+        uses: xu-cheng/latex-action@6549dc21effb2730855a1281407ecfcececc6c1b # v4.1.0
+        with:
+          root_file: |
+            resume_ru.tex
+            resume_en.tex
+          working_directory: resume
+          latexmk_use_xelatex: true
+          texlive_version: 2026
+          os: debian
+          extra_system_packages: fonts-dejavu-core
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: resume-pdfs
+          path: |
+            resume/resume_ru.pdf
+            resume/resume_en.pdf
+          if-no-files-found: error
+          retention-days: 30
