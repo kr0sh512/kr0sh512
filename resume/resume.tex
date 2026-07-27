@@ -1,0 +1,99 @@
+% Shared resume layout. Compile resume_ru.tex or resume_en.tex instead.
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=1.35cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\usepackage[english,russian]{babel}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{microtype}
+
+\input{resume-data.tex}
+\input{translations/\ResumeLanguage.tex}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.04}
+\setlist[itemize]{
+  leftmargin=1.35em,
+  itemsep=2pt,
+  topsep=4pt,
+  partopsep=0pt,
+  parsep=0pt
+}
+
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{muted}{HTML}{555555}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  pdfauthor={\ResumeName},
+  pdftitle={\ResumePdfTitle}
+}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0pt}{}
+  [\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+\newcommand{\entry}[3]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textcolor{muted}{#2}
+  \end{tabularx}\par
+  \vspace{1pt}
+  #3\par\vspace{3pt}
+}
+\newcommand{\project}[2]{\textbf{#1} — #2\par\vspace{3pt}}
+
+\begin{document}
+\selectlanguage{\ResumeDocumentLanguage}
+\raggedright
+
+\begin{minipage}{\textwidth}
+{\LARGE\bfseries \ResumeName}\par
+\vspace{3pt}
+{\large\color{accent} \ResumeHeadline}\par
+\vspace{6pt}
+\href{mailto:\ResumeEmail}{\ResumeEmail}
+\quad·\quad
+\href{\ResumeGitHubUrl}{github.com/\ResumeGitHubHandle}
+\quad·\quad
+\href{\ResumeTelegramUrl}{t.me/\ResumeTelegramHandle}
+\end{minipage}\par
+
+\section{\ResumeSummarySection}
+\ResumeSummaryText
+
+\section{\ResumeExperienceSection}
+\entry{BaseALT}{\ResumeBaseAltDate}{\ResumeBaseAltDescription}
+\entry{\ResumeYandexRole}{\ResumeYandexDate}{\ResumeYandexDescription}
+
+\section{\ResumeEducationSection}
+\entry{\ResumeUniversityName}{\ResumeEducationDate}{\ResumeEducationDescription}
+
+\section{\ResumeSkillsSection}
+\begin{itemize}
+  \item \textbf{\ResumeDevOpsSkillLabel:} \ResumeDevOpsSkillText.
+  \item \textbf{\ResumeCiSkillLabel:} \ResumeCiSkillText.
+  \item \textbf{\ResumeDevelopmentSkillLabel:} \ResumeDevelopmentSkillText.
+  \item \textbf{\ResumeDataSkillLabel:} \ResumeDataSkillText.
+\end{itemize}
+
+\section{\ResumeProjectsSection}
+\project{\href{\ResumeAltRpmUrl}{\ResumeAltRpmName}}{\ResumeAltRpmDescription}
+\project{\href{\ResumeNexusSyncUrl}{\ResumeNexusSyncName}}{\ResumeNexusSyncDescription}
+\project{\ResumeInfrastructureName}{\ResumeInfrastructureDescription}
+\project{\href{\ResumePomodoroUrl}{\ResumePomodoroName}}{\ResumePomodoroDescription}
+\project{\href{\ResumeNetworkDiagramsUrl}{\ResumeNetworkDiagramsName}}{\ResumeNetworkDiagramsDescription}
+\project{\href{\ResumeVpnBotUrl}{\ResumeVpnBotName}}{\ResumeVpnBotDescription}
+
+\end{document}
