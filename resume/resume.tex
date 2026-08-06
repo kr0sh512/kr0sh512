@@ -67,6 +67,8 @@
 \quad·\quad
 \href{\ResumeGitHubUrl}{github.com/\ResumeGitHubHandle}
 \quad·\quad
+\href{\ResumeGiteaUrl}{\ResumeGiteaHandle}
+\quad·\quad
 \href{\ResumeTelegramUrl}{t.me/\ResumeTelegramHandle}
 \end{minipage}\par
 
@@ -87,12 +89,15 @@
   \item \textbf{\ResumeCiSkillLabel:} \ResumeCiSkillText.
   \item \textbf{\ResumeObservabilitySkillLabel:} \ResumeObservabilitySkillText.
   \item \textbf{\ResumeDevelopmentSkillLabel:} \ResumeDevelopmentSkillText.
+  \ifdefined\ResumeLanguagesSkillLabel
+    \item \textbf{\ResumeLanguagesSkillLabel:} \ResumeLanguagesSkillText.
+  \fi
 \end{itemize}
 
 \section{\ResumeProjectsSection}
 \project{\ResumeInfrastructureName}{\ResumeInfrastructureDescription}
 \project{\href{\ResumeAltRpmUrl}{\ResumeAltRpmName}}{\ResumeAltRpmDescription}
-\project{\href{\ResumeNetworkDiagramsUrl}{\ResumeNetworkDiagramsName}}{\ResumeNetworkDiagramsDescription}
+% \project{\href{\ResumeNetworkDiagramsUrl}{\ResumeNetworkDiagramsName}}{\ResumeNetworkDiagramsDescription}
 \project{\href{\ResumeNexusSyncUrl}{\ResumeNexusSyncName}}{\ResumeNexusSyncDescription}
 % \project{\href{\ResumeVpnBotUrl}{\ResumeVpnBotName}}{\ResumeVpnBotDescription}
 \project{\href{\ResumePomodoroUrl}{\ResumePomodoroName}}{\ResumePomodoroDescription}

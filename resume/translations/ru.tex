@@ -10,15 +10,25 @@
 
 \newcommand{\ResumeExperienceSection}{Опыт}
 \newcommand{\ResumeBaseAltDate}{по настоящее время}
-\newcommand{\ResumeBaseAltDescription}{Инструменты для Linux/RPM и системные исследования: механизмы зависимостей ALT Linux, производительность и совместимость RPM.}
+\newcommand{\ResumeBaseAltDescription}{%
+\begin{itemize}
+  \item Исследовал механизм set:version в ALT RPM и разработал альтернативную реализацию сравнения кодированных множеств зависимостей.
+  \item Создал стенд для A/B-тестирования вариантов librpm на реальных сценариях APT: check, install, upgrade, autoremove и dist-upgrade.
+  \item Проверял совместимость дифференциальными тестами и санитайзерами, анализировал производительность с помощью hasher и perf.
+\end{itemize}}
 \newcommand{\ResumeYandexRole}{Яндекс — стажёр, команда DevTools автономного транспорта}
 \newcommand{\ResumeYandexDate}{осень 2025}
-\newcommand{\ResumeYandexDescription}{Разработка в команде инструментов для разработчиков.}
+\newcommand{\ResumeYandexDescription}{%
+\begin{itemize}
+  \item С помощью MultiThreading в python ускорил сборку внутренних компонент.
+  \item Добавление в CI блок-тестов для отказа от legacy-кода.
+  \item Рефактор golang кода для уменьшения общего размера прошивки роверов.
+\end{itemize}}
 
 \newcommand{\ResumeEducationSection}{Образование}
 \newcommand{\ResumeUniversityName}{Московский государственный университет имени М. В. Ломоносова}
-\newcommand{\ResumeEducationDate}{обучаюсь}
-\newcommand{\ResumeEducationDescription}{Факультет вычислительной математики и кибернетики, Computer Science.}
+\newcommand{\ResumeEducationDate}{2023--2027}
+\newcommand{\ResumeEducationDescription}{Факультет вычислительной математики и кибернетики, бакалавриат, направление «Прикладная математика и информатика» (ПМИ). Кафедра автоматизации систем вычислительных комплексов (АСВК).}
 
 \newcommand{\ResumeSkillsSection}{Ключевые навыки}
 \newcommand{\ResumeLinuxSkillLabel}{Linux и сети}
@@ -33,6 +43,8 @@
 \newcommand{\ResumeDevelopmentSkillText}{\ResumeDevelopmentStack}
 \newcommand{\ResumeDataSkillLabel}{Данные и качество}
 \newcommand{\ResumeDataSkillText}{\ResumeDataStores; \ResumeQualityTools, санитайзеры, дифференциальное тестирование, бенчмаркинг}
+\newcommand{\ResumeLanguagesSkillLabel}{Языки}
+\newcommand{\ResumeLanguagesSkillText}{английский B2}
 
 \newcommand{\ResumeProjectsSection}{Избранные проекты}
 \newcommand{\ResumeAltRpmDescription}{исследование кодированных множеств символов и сравнения зависимостей RPM в ALT Linux: C-реализации, хеширование, совместимость, проверки с санитайзерами и APT/RPM-бенчмарки.}
