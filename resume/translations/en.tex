@@ -6,35 +6,51 @@
 \newcommand{\ResumeHeadline}{DevOps / Linux Engineer · Infrastructure Automation}
 
 \newcommand{\ResumeSummarySection}{Professional Summary}
-\newcommand{\ResumeSummaryText}{DevOps-oriented developer and Computer Science student at CMC MSU. I build and operate Linux infrastructure, automate repeatable work, and develop systems and backend tools. My primary interests are ALT Linux and RPM internals, Kubernetes, containers, CI/CD, Python, and C.}
+\newcommand{\ResumeSummaryText}{Fourth-year student at the Faculty of Computational Mathematics and Cybernetics, Lomonosov Moscow State University, with hands-on experience operating Linux servers, a multi-node K3s cluster, and infrastructure automation. I deploy containerized services, configure CI/CD, monitoring, TLS, and DNS, and automate server configuration with Ansible. I develop systems tools in Python and C and have worked on teams at BaseALT and Yandex. I am seeking a DevOps/Linux internship focused on automation, operations, and troubleshooting.}
 
 \newcommand{\ResumeExperienceSection}{Experience}
 \newcommand{\ResumeBaseAltDate}{Present}
-\newcommand{\ResumeBaseAltDescription}{Linux/RPM tooling and systems research, including ALT Linux dependency mechanisms, RPM performance, and compatibility.}
+\newcommand{\ResumeBaseAltDescription}{%
+\begin{itemize}
+  \item Researched the set:version mechanism in ALT RPM and developed an alternative implementation for comparing encoded dependency sets.
+  \item Built a test bench for A/B testing librpm variants against real APT scenarios: check, install, upgrade, autoremove, and dist-upgrade.
+  \item Validated compatibility with differential testing and sanitizers and analyzed performance using hasher and perf.
+\end{itemize}}
 \newcommand{\ResumeYandexRole}{Yandex — DevTools Intern, Autonomous Transport}
 \newcommand{\ResumeYandexDate}{Fall 2025}
-\newcommand{\ResumeYandexDescription}{Software development in a developer tooling team.}
+\newcommand{\ResumeYandexDescription}{%
+\begin{itemize}
+  \item Used Python multithreading to speed up builds of internal components.
+  \item Added block-level tests to CI to support retiring legacy code.
+  \item Refactored Go code to reduce the overall size of rover firmware.
+\end{itemize}}
 
 \newcommand{\ResumeEducationSection}{Education}
 \newcommand{\ResumeUniversityName}{Lomonosov Moscow State University}
-\newcommand{\ResumeEducationDate}{Current}
-\newcommand{\ResumeEducationDescription}{Faculty of Computational Mathematics and Cybernetics, Computer Science.}
+\newcommand{\ResumeEducationDate}{2023--2027}
+\newcommand{\ResumeEducationDescription}{Faculty of Computational Mathematics and Cybernetics, Bachelor's degree program in Applied Mathematics and Computer Science. Department of Computer Systems Automation (ASVK).}
 
 \newcommand{\ResumeSkillsSection}{Core Skills}
-\newcommand{\ResumeDevOpsSkillLabel}{DevOps and infrastructure}
-\newcommand{\ResumeDevOpsSkillText}{\ResumeDevOpsStack}
-\newcommand{\ResumeCiSkillLabel}{CI/CD}
-\newcommand{\ResumeCiSkillText}{\ResumeCiTools, multi-architecture container builds, automated testing, packaging, and publishing}
+\newcommand{\ResumeLinuxSkillLabel}{Linux and networking}
+\newcommand{\ResumeLinuxSkillText}{\ResumeLinuxStack}
+\newcommand{\ResumeContainersSkillLabel}{Containers and orchestration}
+\newcommand{\ResumeContainersSkillText}{\ResumeContainersStack}
+\newcommand{\ResumeCiSkillLabel}{Automation and CI/CD}
+\newcommand{\ResumeCiSkillText}{\ResumeCiTools, multi-architecture container builds, testing, packaging, and publishing}
+\newcommand{\ResumeObservabilitySkillLabel}{Observability}
+\newcommand{\ResumeObservabilitySkillText}{\ResumeObservabilityTools}
 \newcommand{\ResumeDevelopmentSkillLabel}{Development}
 \newcommand{\ResumeDevelopmentSkillText}{\ResumeDevelopmentStack}
 \newcommand{\ResumeDataSkillLabel}{Data and quality}
 \newcommand{\ResumeDataSkillText}{\ResumeDataStores; \ResumeQualityTools, sanitizers, differential testing, benchmarking}
+\newcommand{\ResumeLanguagesSkillLabel}{Languages}
+\newcommand{\ResumeLanguagesSkillText}{English — B2}
 
 \newcommand{\ResumeProjectsSection}{Selected Projects}
 \newcommand{\ResumeAltRpmDescription}{research into encoded symbol sets and RPM dependency comparison in ALT Linux, covering C implementations, hashing, compatibility, sanitizer checks, and APT/RPM benchmarks.}
-\newcommand{\ResumeNexusSyncDescription}{a client-server system for centralized computer management and approved command dispatch. FastAPI, SQLAlchemy, CLI, YAML configuration, systemd, standalone builds, and CI.}
-\newcommand{\ResumeInfrastructureName}{Homelab}
-\newcommand{\ResumeInfrastructureDescription}{k3s homelab, which provides training in practical DevOps skills: deploying containers (Gites, media server, TG bots), configuring metrics (Prometheus, grafana, node-exporter) and alerts (Alertmanager). Linux server automation with Ansible, ingress/ServiceLB, certificates and DNS, and troubleshooting.}
-\newcommand{\ResumePomodoroDescription}{a browser timer built with React, TypeScript, and Vite; tested and published by GitHub Actions as an unprivileged multi-architecture image in GHCR.}
+\newcommand{\ResumeNexusSyncDescription}{a client-server system for centralized computer management and approved command execution. FastAPI, SQLAlchemy, CLI, YAML configuration, systemd, standalone builds, and CI.}
+\newcommand{\ResumeInfrastructureName}{Seven-node K3s homelab}
+\newcommand{\ResumeInfrastructureDescription}{operating containerized services; configuring Traefik ingress, ServiceLB, TLS certificates, and DNS; monitoring with Prometheus, Grafana, and Node Exporter; alerting with Alertmanager; automating Linux server configuration with Ansible; and troubleshooting network and system issues.}
 \newcommand{\ResumeNetworkDiagramsDescription}{a Python tool for building and visualizing network topologies.}
 \newcommand{\ResumeVpnBotDescription}{a containerized Python bot for managing invitations and user lifecycle through the Marzban API.}
+\newcommand{\ResumePomodoroDescription}{a browser timer built with React, TypeScript, and Vite; tested and published by GitHub Actions as an unprivileged multi-architecture image in GHCR.}
