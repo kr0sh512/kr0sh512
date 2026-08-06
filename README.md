@@ -37,17 +37,19 @@ I'm a DevOps-oriented developer and Computer Science student at [CMC MSU](https:
 
 Research into ALT Linux RPM's encoded symbol sets and dependency comparison. The project covers C implementation work, hashing, compatibility testing, sanitizer checks, and benchmarks against realistic RPM/APT workflows.
 
-### [nexus-sync](https://github.com/kr0sh512/nexus-sync)
-
-A client-server system for centrally managing computers and dispatching approved commands. Built with FastAPI and SQLAlchemy, with a CLI, YAML-configured clients, systemd units, standalone builds, tests, type checks, and CI packaging.
-
 ### Personal Infrastructure Automation
 
 Ansible playbooks for automating Linux servers and repeatable administration. My broader infrastructure work includes multi-node K3s clusters, container deployment, ingress and ServiceLB networking, TLS lifecycle automation, and remote troubleshooting.
 
+For example, [Gitea Instance](https://git.krosh.dev)
+
+### [nexus-sync](https://github.com/kr0sh512/nexus-sync)
+
+A client-server system for centrally managing computers and dispatching approved commands. Built with FastAPI and SQLAlchemy, with a CLI, YAML-configured clients, systemd units, standalone builds, tests, type checks, and CI packaging.
+
 ### [Pomodoro](https://github.com/kr0sh512/pomodoro)
 
-A customizable browser-based Pomodoro timer and clock built with React, TypeScript, and Vite. GitHub Actions tests and packages it as an unprivileged multi-architecture container published to GHCR.
+A customizable browser-based Pomodoro timer and clock built with React, TypeScript, and Vite. GitHub Actions tests and packages it as an unprivileged multi-architecture container published to GHCR. Aviable on [pom.krosh.dev](https://pom.krosh.dev)
 
 ### [Network Diagrams Tool](https://github.com/kr0sh512/network-diagrams-tool)
 
